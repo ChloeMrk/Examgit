@@ -19,7 +19,11 @@ $git config --local user.email alan@alan.fr
 
 °Zone de travail de Git
 
-Index: *git add mon_fichier
+Ajouter à l'Index: $git add mon_fichier
+
+Ajouter un emsemble de fichier/dossiers ou modifier: $git add . ou $git add -A
+
+
 
 Remarque: Tant que le fichier n'est pas ajouter dans l'index Git, Git ne connaîtra pas le fichier et il ne sera pas suivi en version. Une fois dans l'index il sera suivi en version
 
@@ -42,4 +46,13 @@ $ git commit : pour ouvrir l'éditeur et mettre un titre et texte plus long
 
 Initialiser un projet Git: git init
 
-Pour vérifier l'état du fichier indexée: git status
+Pour vérifier l'état de votre dépot: git status
+
+
+°Pour voir les différents commit:
+
+$git log
+
+$git log --oneline
+
+$git shortlog
