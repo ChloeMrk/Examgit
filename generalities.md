@@ -56,3 +56,44 @@ $git log
 $git log --oneline
 
 $git shortlog
+
+
+°Commandes pour gérer un dépôt Git
+
+$git status
+$git help [nom de la commande]
+$git log
+$ git log --oneline # voir les commit en une ligne
+$ git log master..origin/master # voir les différences entre deux branches
+$ git log -5 # 5 derniers commits
+$ git log -p -5 # log avec différence pour chaque commit sur les 5 derniers
+$ git log --stat # stat sur les modifs par commits
+$ git log --since=2.weeks # depuis deux semaines, --until existe également
+
+
+°Blame pour voir qui a fait les modifications
+
+$ git blame -L 40,60 readme.md # rechercher qui a fait les modifs par ligne -L
+$ git blame --since=3.weeks -- readme.md # depuis 3 semaines avec auteurs des modifications
+$ git blame -L "/^### /" readme.md # recherche avec expression régulière
+
+
+°Renommer un fichier
+
+$git mv mon_ancien_fichier mon_nouveau_fichier
+
+°Supprimer un fichier
+
+$git rm mon_fichier
+
+Attention ne pas oublier d'ajouter $git add nom_fichier pour confirmer la suppression
+
+°Ne plus suivre un fichier
+
+$git rm --cached images/incredients.jpg
+
+Voir les fichiers suivis:
+
+$git ls-files
+
+
