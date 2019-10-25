@@ -104,5 +104,25 @@ Indiquer un chemin absolu pour indiquer où se trouve votre serveur. La commande
 puis push la branche master dans le dépôt dans le serveur origin: $git push origin master
 
 
+°Remote:
 
+Lister les dépôts distant: $git remote
+
+Lister en mode verbeux: $git remote -v
+
+Nommer votre dépôt distant: [alias]
+
+Ajouter un dépot distant: $git remote add [alias] [chemin_du_serveur_distant]
+
+Supprimer un dépôt distant: $git remote rm [alias]
+
+Renommer un dépôt distant: $git remote rename [alias] [new_alias]
+
+Récupérer la branche distante localement sans fusion avec sa branche master:$git fetch origin
+
+Comparer les différences entre master local et distant (après un fetch):$git log master..origin/master
+
+Publier une branche distante: $git push [nom-distant] [nom-de-branche]
+
+Inspecter un dépôt de distant: $git remote show origin
 
