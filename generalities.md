@@ -96,4 +96,8 @@ Voir les fichiers suivis:
 
 $git ls-files
 
+°Modifier un fichier connu par Git:
+
+git commit -am "un message court"
+
 
