@@ -21,9 +21,22 @@ $git config --local user.email alan@alan.fr
 
 Index: *git add mon_fichier
 
+Remarque: Tant que le fichier n'est pas ajouter dans l'index Git, Git ne connaîtra pas le fichier et il ne sera pas suivi en version. Une fois dans l'index il sera suivi en version
+
+
 Dépôt: git commit -m "une feature"
 
-Remarque: Tant que le fichier n'est pas ajouter dans l'index Git, Git ne connaîtra pas le fichier et il ne sera pas suivi en version. Une fois dans l'index il sera suivi en version
+°Règles messages de commit
+
+- un titre de 49 caractères max
+- pour un texte plus long, répondre à la question du pourquoi de votre texte
+- on peut commiter avec un titre uniquement option -m
+
+Exemple : $git commit -m "étudiant/tp: si terminé, attribuer note"
+
+$ git commit : pour ouvrir l'éditeur et mettre un titre et texte plus long
+
+
 
 °git init
 
